@@ -4,10 +4,10 @@ import './App.css';
 export default class App extends React.Component {
 
   state = {
-    nomePacote: "",
-    epoca: "",
-    preco: 0,
-    periodoEmDias: 0
+    nomeDestino: "",
+    localidade: "",
+    tipoDestino: "",
+    pacote: "" 
   }
 
   create = () => {
@@ -20,19 +20,19 @@ export default class App extends React.Component {
     return (
       <div className="Container">
       <div className="App">
-        <h1>Cadastro de Pacotes</h1>
+        <h1>Cadastro de Destinos</h1>
       
+        <label className="Field">Destino</label>
+        <input type="text" className="Input-field" value={this.state.nomeDestino} onChange={(e) => {this.setState({nomeDestino: e.target.value})}} />
+        <br/>
+        <label className="Field">Localidade</label>
+        <input type="text" className="Input-field" value={this.state.localidade} onChange={(e) => {this.setState({localidade: e.target.value})}} />
+        <br/>
+        <label className="Field">Tipo do Destino</label>
+        <input type="text" className="Input-field" value={this.state.tipoDestino} onChange={(e) => {this.setState({tipoDestino: e.target.value})}} />
+        <br/>
         <label className="Field">Pacote</label>
-        <input type="text" className="Input-field" value={this.state.nomePacote} onChange={(e) => {this.setState({nomePacote: e.target.value})}} />
-        <br/>
-        <label className="Field">Época</label>
-        <input type="text" className="Input-field" value={this.state.epoca} onChange={(e) => {this.setState({epoca: e.target.value})}} />
-        <br/>
-        <label className="Field">Preço</label>
-        <input type="text" className="Input-field" value={this.state.preco} onChange={(e) => {this.setState({preco: e.target.value})}} />
-        <br/>
-        <label className="Field">Período</label>
-        <input type="text" className="Input-field" value={this.state.periodo} onChange={(e) => {this.setState({periodo: e.target.value})}} />
+        <input type="text" className="Input-field" value={this.state.pacote} onChange={(e) => {this.setState({pacote: e.target.value})}} />
 
         <br/>
         <button className="Button" onClick={this.create}>Salvar</button>

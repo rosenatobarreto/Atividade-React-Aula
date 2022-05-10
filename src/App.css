@@ -1,10 +1,11 @@
 .App {
   text-align: center;
-  background-color: #61dafb;
+  background-color: #70c7df;
   padding: 20px;
   margin: auto;
   margin-top: 30px;
   width: 400px;
+  height: 420px;
   border-radius: 8px;
   justify-content: right;
 }
@@ -37,7 +38,7 @@
 
 .Container{
   vertical-align: center;
-  box-sizing: inherit;
+  /*box-sizing: inherit;*/
   
 }
 .Field{
@@ -51,20 +52,57 @@
 }
 
 .Input-field{
-  width: 340px;
+  width: 348px;
   height: 25px;
   justify-content: center;
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .Button{
-  width: 62px;
+  width: 68px;
   height: 30px;
-  font-size: 15px;
+  font-size: 16px;
+  border-radius: 4px;
   
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    text-align: center;
+    background-color: #70c7df;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+    height: 20%;
+    border-radius: 8px;
+    justify-content: right;
+    font-size: 12px;
+  }
+
+  .Field{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    padding-right: 8px;
+    display: flex;
+    margin-left: 8px;
+  }
+
+  .Input-field{
+    width: 90%;
+    height: 25px;
+    justify-content: center;
+    display: flex;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
 }
 
 @keyframes App-logo-spin {
