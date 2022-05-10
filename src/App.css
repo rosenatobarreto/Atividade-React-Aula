@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  background-color: #61dafb;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+  border-radius: 8px;
+  justify-content: right;
 }
 
 .App-logo {
@@ -26,6 +33,38 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.Container{
+  vertical-align: center;
+  box-sizing: inherit;
+  
+}
+.Field{
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  padding-right: 8px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Input-field{
+  width: 340px;
+  height: 25px;
+  justify-content: center;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.Button{
+  width: 62px;
+  height: 30px;
+  font-size: 15px;
+  
 }
 
 @keyframes App-logo-spin {
